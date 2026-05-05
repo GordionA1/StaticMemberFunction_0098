@@ -9,6 +9,7 @@ class mahasiswa {
     public:
     mahasiswa(); 
     mahasiswa(int);
+    mahasiswa (string);
     mahasiswa(int inim, string iNama);
     void cetak();
 
