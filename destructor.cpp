@@ -14,3 +14,34 @@ public:
     void cetakData();
     void isiData();
 };
+
+angka::angka(int i){ // Constructor
+    panjang = i;
+    arr = new int[i];
+    isiData();
+}
+
+angka::~angka(){ // Destructor
+    cout << endl;
+    cetakData();
+    delete[] arr;
+    cout << "Alamat Array Sudah Dilepaskan" << endl;
+}
+
+void angka::cetakData()
+{
+    for (int i = 1; i <= panjang; i++) // loop cetak
+    {
+        cout << i << " = " << arr[i] << endl;
+    }
+}
+
+void angka::isiData()
+{
+    for (int i = 1; i <= panjang; i++) // loop input
+    {
+        cout << i << " = ";
+        cin >> arr[i];
+    }
+    cout << endl;
+}
