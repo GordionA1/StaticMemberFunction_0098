@@ -45,3 +45,12 @@ void angka::isiData()
     }
     cout << endl;
 }
+
+int main()
+{
+    angka belajarcpp(3);
+    angka *ptrBelajarcpp = new angka(5); // Constructor Dipanggil
+    delete ptrBelajarcpp;                // Destructor Dipanggil
+
+    return 0;
+}
