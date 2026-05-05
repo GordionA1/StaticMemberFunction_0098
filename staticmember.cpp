@@ -15,3 +15,10 @@ public:
         SetId();
     }
 };
+
+int Mahasiswa::nim = 10;
+
+void Mahasiswa ::SetId() {
+    id = ++nim;
+};
+
