@@ -24,3 +24,9 @@ public:
         SetId();
     }
 };
+
+int Mahasiswa::nim = 0;
+
+void Mahasiswa ::SetId() {
+    id = ++nim;
+};
