@@ -28,3 +28,16 @@ void Mahasiswa ::printall() {
     cout << endl;
 };
 
+int main() {
+    Mahasiswa mhs1("Budi");
+    Mahasiswa mhs2("Siti");
+    Mahasiswa mhs3("Andi");
+    Mahasiswa mhs4("Rina");
+
+    mhs1.printall();
+    mhs2.printall();
+    mhs3.printall();
+    mhs4.printall();
+
+    return 0;
+}
